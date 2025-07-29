@@ -4,7 +4,7 @@ public class ColombiaValidator implements IdentifcationValidator{
 
     @Override
     public boolean isValid(String identification) {
-        return identification != null && identification.matches("\\d{9}-\\d")
+        return identification != null && identification.matches("\\d{9}-\\d");
     }
 
     @Override

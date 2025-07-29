@@ -18,6 +18,6 @@ public class ClientRestController {
     @GetMapping("/valid")
     public String valid(@RequestParam String country, @RequestParam String identification){
         boolean valid = clientService.vaidateIdentification(country,identification);
-        return valid ? "Valid identificatio" : "Invalid identification";
+        return valid ? "Valid identification" : "Invalid identification";
     }
 }
